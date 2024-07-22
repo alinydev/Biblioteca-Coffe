@@ -2,19 +2,26 @@
 <html>
 <head>
     <title>Livros</title>
+    <link rel="stylesheet" href="livros.css">
 </head>
 <body>
 
-<p>Cadastre seu Livro</p>
+<form action="livros" method="post">
+    <h1>${livro.ISBN == null ? 'Cadastrar Novo Livro' : 'Editar Livro'}<h1> <br> 
+    <input type="hidden" name="acao" value="${livro.ISBN == ISBN? 'inserir' : 'atualizar'}">
+    <%-- Adicione o campo ISBN apenas se estiver editando um livro --%>
+    <c:if test="${livro.ISBN != null}">
+        <input type="hidden" name="ISBN" value="${livro.ISBN}">
+    </c:if>
 
-<h1>${livro.ISBN == null ? 'Adicionar Novo Livro' : 'Editar Livro'}</h1>
-
-<form action="${livro.ISBN == null ? 'insert' : 'update'}" method="post">
-    <input type="hidden" name="ISBN" value="${livro.ISBN}">
     <table>
         <tr>
+            <td>ISBN:</td>
+            <td><input type="text" name="ISBN" value="${livro.ISBN}"></td>
+        </tr>
+        <tr>
             <td>Nome do Livro:</td>
-            <td><input type="text" name="nomeLivro" value="${livro.nomeLivro}"></td>
+            <td><input type="text" name="nome_livro" value="${livro.nome_livro}"></td>
         </tr>
         <tr>
             <td>Categoria:</td>
@@ -26,7 +33,7 @@
         </tr>
         <tr>
             <td>Diretório da Imagem:</td>
-            <td><input type="text" name="diretorioImagem" value="${livro.diretorioImagem}"></td>
+            <td><input type="text" name="capa" value="${livro.diretorioImagem}"></td>
         </tr>
         <tr>
             <td>Quantidade:</td>
@@ -37,7 +44,9 @@
             <td><input type="submit" value="Salvar"></td>
         </tr>
     </table>
+    <br>
+    <a href="livro-list.jsp">Listar Livros</a>
 </form>
-<a href="testando/livro-list.jsp">Listar Livro</a>
+
 </body>
 </html>
