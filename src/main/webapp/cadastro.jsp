@@ -1,93 +1,45 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<html lang="en">
 <head>
-    <title>Cadastrar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Literature - Home</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
-<h2>Cadastro Usuário</h2>
 
-<form action="usuario" method="post">
-    <input type="hidden" name="acao" value="inserir">
-    Nome: <input type="text" name="nome"><br>
-    Email: <input type="text" name="email"><br>
-    Senha: <input type="password" name="password"><br>
-    <input type="submit" value="Cadastrar">
-</form>
+<header>
+    <div class="barra"><h1>Coffee & Literature</h1></div>
+    <div class="bola"><img src="Assets/Logo.png" alt="" id="logo"></div>
+    <h2>Faça Seu Cadastro</h2>
+</header>
 
-<br/>
-<a href="login.jsp">Já possui uma conta? Faça o login.</a>
-<br/>
-<a href="livros.jsp">Cadastrar Livro</a>
-<br/>
-<a href=/welcome.jsp">Voltar para Tela Inicial</a>
+<main>
+    <div class="container">
+        <%--@declare id="email"--%>
+        <label for="email">Nome de Usuário:</label>
+        <input type="email" name="email">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+
+        <label for="email">Senha:</label>
+        <input type="email" name="email">
+
+        <label for="email">Confirme a Senha:</label>
+        <input type="password" name="senha">
+
+        <button type="submit">Entrar</button>
+            <br>
+            <a href="login.jsp">Já possui uma conta? Faça o login.</a>
+            <br>
+            <a href="livros.jsp">Cadastrar Livro</a>
+            <br>
+            <a href="index.jsp">Voltar para Tela Inicial</a>
+    </div>
+</main>
+<footer>
+    <p>Projeto desenvolvido por Aliny Melquiades, Patrícia Santos e João Lucas Andrade durante a sétima Academia Java</p>
+</footer>
 </body>
 </html>
-
-
-
-
-
-<%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro Usuário</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<jsp:include page="menubar.jsp" />
-<div>
-    <h2>Formulário de Cadastro Usuário</h2>
-    <form action="#">
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" required />
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required />
-        <button type="submit">Enviar</button>
-    </form>
-</div>
-</body>
-</html>--%>
-
-
-
-
-
-
-
-
-<%--
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro Usuário</title>
-
-
-
-</head>
-<body>
-
-<div>
-    <h2>Formulário de Cadastro Usuário </h2>
-    <form action="#">
-
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" required />
-
-
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required />
-
-        <button type="submit">Enviar</button>
-    </form>
-</div>
-
-</body>
-</html>--%>
