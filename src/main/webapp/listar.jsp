@@ -14,7 +14,7 @@
         <div class="bola">
             <a href="index.jsp" id="home"><img src="Assets/Logo.png" alt=""></a>
         </div>
-        <a href="" id="logout">Logout</a>
+        <a href="login.jsp" id="logout">Logout</a>
     </header>
 
     <main>
