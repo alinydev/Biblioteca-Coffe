@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+/* Header */
+header {
+    height: 7em;
+    background-color: #B29F78;
+    text-align: center;
+    border-bottom: solid 5px #EB6D00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.bola{
+    width: 6.0em;
+    height: 6.0em;
+    margin: 2em;
+    background-color: #67583C;
+    border-radius: 50%;
+    border-bottom: solid 5px #EB6D00;
+    border-left: solid 3px #EB6D00;
+    border-right: solid 3px #EB6D00;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bola img{
+    width: 5em;
+    height: 4em;
+    
+}
+#home{
+    transition: 0.2s;
+}
+#home:hover{
+    transform: scale(1.1);
+}
+#logout{
+    float: right;
+    margin: 2em;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+#logout:hover{
+    margin: 2em;
+    text-decoration: none;
+    color: #EB6D00;
+}
+#search{
+    width: 45em;
+    height: 2.2em;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+}
+.inpwrapper{
+    margin: 0 auto;
+    width: 40em;
+    height: 2.5em;
+    border: solid 5px #5182A0;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Body */
+#titulo{
+    color: white;
+    margin: 1em auto;
+    text-align: center;
+}
+body{
+    background-image: url("Assets/Biblioteca-Fundo 4.jpg");
+    background-size: 100%;
+}
+.container{
+    width: 60em;
+    margin: 2em auto;
+    height: fit-content;
+    padding: 2em;
+    background-color: #B29F78;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+
+/* Footer */
+footer {
+    height: 5em;
+    width: 100%;
+    background-color: #B29F78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.37);
+    border-top: solid 5px #EB6D00;
+}
+
+@media (min-height:780px) {
+    footer {
+    bottom: 0;
+    position: fixed
+    }
+}
+
+@media (max-height:780px) {
+    footer {
+    margin-top: 15em;
+    }
+}
