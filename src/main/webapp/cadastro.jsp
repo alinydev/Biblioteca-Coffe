@@ -27,7 +27,7 @@
         <input type="email" name="email">
 
         <button type="submit">Entrar</button>
-            <a href="login.jsp">Já possui uma conta? Faça o login.</a>
+            <p>Já possui uma conta? <a href="login.jsp" id="login">Faça Login</a></p>
     </div>
 </main>
 <footer>
