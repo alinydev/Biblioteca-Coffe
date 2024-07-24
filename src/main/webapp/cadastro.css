@@ -24,6 +24,22 @@ body {
 
 }
 
+#logout {
+    margin-left: 93%;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+#logout:hover {
+    color: #EB6D00;
+    font-weight: 900;
+}
+
+.barra h1 {
+    font-family: Playwrite PE;
+    font-size: 1.3em;
+}
 
 .bola {
     width: 8em;
@@ -59,7 +75,7 @@ header h2 {
 
 main .container {
     width: 30em;
-    height: 40em;
+    height: 25em;
     display: flex;
     flex-direction: column;
     background-color: #B29F78;
@@ -85,15 +101,15 @@ main .container {
     font-size: 1.2em;
     font-weight: bolder;
 }
-.container button {
+.container button{
     width: 10em;
-    height: 2em;
+    height: 3em;
     border-radius: 50px;
     border: none;
     background-color: green;
     color: white;
     font-weight: bolder;
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 2em;
     transition: 0.2s;
 }
@@ -102,7 +118,7 @@ main .container {
     background-color: rgb(0, 163, 0);
 }
 .container a{
-    color: black;
+    color: #5182A0;
     text-decoration: none;
     transition: 0.2s;
 }
@@ -129,13 +145,4 @@ footer {
         margin-top: 5em;
         position: inherit;
     }
-}
-
-a {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 5px;
 }
