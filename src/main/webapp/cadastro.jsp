@@ -26,16 +26,8 @@
         <label for="email">Senha:</label>
         <input type="email" name="email">
 
-        <label for="email">Confirme a Senha:</label>
-        <input type="password" name="senha">
-
         <button type="submit">Entrar</button>
-            <br>
             <a href="login.jsp">Já possui uma conta? Faça o login.</a>
-            <br>
-            <a href="livros.jsp">Cadastrar Livro</a>
-            <br>
-            <a href="index.jsp">Voltar para Tela Inicial</a>
     </div>
 </main>
 <footer>
