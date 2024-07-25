@@ -15,6 +15,7 @@
 </header>
 
 <main>
+    <form action="index.jsp">
     <div class="container">
         <%--@declare id="email"--%><label for="email">Email:</label>
         <input type="email" name="email">
