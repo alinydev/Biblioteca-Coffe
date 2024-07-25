@@ -15,6 +15,7 @@
 </header>
 
 <main>
+    <form action="login.jsp">
     <div class="container">
         <%--@declare id="email"--%>
         <label for="email">Nome de Usuário:</label>
@@ -28,6 +29,7 @@
 
         <button type="submit">Entrar</button>
             <p>Já possui uma conta? <a href="login.jsp" id="login">Faça Login</a></p>
+        <form>
     </div>
 </main>
 <footer>
