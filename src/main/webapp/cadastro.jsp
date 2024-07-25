@@ -25,7 +25,7 @@
         <input type="email" name="email">
 
         <label for="email">Senha:</label>
-        <input type="email" name="email">
+        <input type="password" name="email">
 
         <button type="submit">Entrar</button>
             <p>Já possui uma conta? <a href="login.jsp" id="login">Faça Login</a></p>
