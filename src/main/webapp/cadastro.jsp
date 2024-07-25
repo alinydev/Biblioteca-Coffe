@@ -19,7 +19,7 @@
     <div class="container">
         <%--@declare id="email"--%>
         <label for="email">Nome de Usuário:</label>
-        <input type="email" name="email">
+        <input type="text" name="email">
 
         <label for="email">Email:</label>
         <input type="email" name="email">
@@ -27,7 +27,7 @@
         <label for="email">Senha:</label>
         <input type="password" name="email">
 
-        <button type="submit">Entrar</button>
+        <button type="submit">Cadastrar</button>
             <p>Já possui uma conta? <a href="login.jsp" id="login">Faça Login</a></p>
         <form>
     </div>
