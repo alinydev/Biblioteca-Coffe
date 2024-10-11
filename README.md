@@ -17,5 +17,3 @@ Desde o início, o principal pilar do projeto foi o trabalho em equipe e a comun
             
 <b>Esperamos que você aproveite a experiência no Coffee & Literature tanto quanto nós gostamos de desenvolvê-lo!</b>
 
-![image](https://github.com/user-attachments/assets/83d817ba-dc2b-4c10-829c-06145582099a)
-
